@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <a href="http://" class="navbar-brand py-2">Student Management Information</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="http://" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://" class="nav-link active">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://" class="nav-link active">Services</a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a href="http://" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dr">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dr">
+                            <a href="http://" class="dropdown-item">Dropdown 1</a>
+                            <a href="http://" class="dropdown-item">Dropdown 2</a>
+                            <a href="http://" class="dropdown-item">Dropdown 3</a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-light btn-sm my-2 ml-3 m_btn">LOGOUT</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- registration form  -->
+    <div class="container my-5">
+        <div class="card">
+            <div class="card-header">
+                <div class="h3">Registration form</div>
+            </div>
+            <div class="card-body">
+                <form action="" class="mx-4">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Last name</label>
+                                <input type="text" name="lastname" id="lastname" 
+                                    placeholder="Enter last name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">First name</label>
+                                <input type="text" name="firtstname" id="firstname" 
+                                    placeholder="Enter first name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Middle name</label>
+                                <input type="text" name="middlename" id="middlename" 
+                                    placeholder="Enter middle name" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Gender</label>
+                                <select name="gender" id="gender" class="form-control">
+                                    <option value="">.....</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Birthdate</label>
+                                <input type="date" name="birthdate" id="birthdate" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Contact Number</label>
+                                <input type="text" name="phone" id="phone" 
+                                    placeholder="Enter phone / telephone" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Marital Status</label>
+                                <input type="text" name="status" id="status" 
+                                    placeholder="Single / Married / Divorced" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Course</label>
+                                <select name="course" id="course" class="form-control">
+                                    <option value="bs computer science">BS Computer Science</option>
+                                    <option value="bs information technology">BS Information Technology</option>
+                                    <option value="bs business management">BS Business Management</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="">College level</label>
+                                <input type="text" name="level" id="level" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="">Address</label>
+                                <input type="text" name="address" id="address" 
+                                    placeholder="Enter address" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade mt-5" data-backdrop="static" id="modal_edit">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title h4">Edit Student Information</div>
+                    <button class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label for="">Last name</label>
+                            <input type="text" name="lastname" id="lastname" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">First name</label>
+                            <input type="text" name="firstname" id="firstname" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Middle name</label>
+                            <input type="text" name="middlename" id="middlename" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="btn btn-secondary" data-toggle="modal" data-target="#modal_edit">Modal</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
